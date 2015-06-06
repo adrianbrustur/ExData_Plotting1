@@ -47,6 +47,7 @@ lines(strptime(data.selection$Date, format="%Y-%m-%d %H:%M:%S"), data.selection$
 lines(strptime(data.selection$Date, format="%Y-%m-%d %H:%M:%S"), data.selection$Sub_metering_3, type="l", col="blue")
 legend("topright", 
        lty=1, 
+       bty="n",
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
        col=c("black", "red", "blue"),
        cex=0.5)
